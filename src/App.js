@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import Header from "./components/Header/Header";
 import Body from "./components/Body/Body";
 import Footer from "./components/Footer/Footer";
+import Age from "./components/Age/Age";
 import App from "./App";
 
 //compoment composition- component inside component
@@ -25,12 +26,17 @@ import App from "./App";
   //);
 //}
 
+const value1 = "Hello";
+const value2 = "React";
+
 const AppLayout = () =>{
   return(
     <>
-    <Header/>
-    <Body/>
+    <Header arg1 ={value1} arg2={value2}/>
+    <Body arg1 ={value1} arg2={value2}/>
     <Footer/>
+    <Age/>
+    
     </>
   );
 }
